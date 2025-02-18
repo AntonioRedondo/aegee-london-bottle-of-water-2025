@@ -1,0 +1,73 @@
+.locations {
+	z-index: 8;
+	
+	&__hostel-container {
+		height: 25vw;
+		margin-top: 4vw;
+
+		overflow: hidden;
+		position: relative;
+		display: flex;
+		
+		@media (max-width: $breakpointMobile) {
+			height: 85vh;
+			margin: 12vw 0 0;
+			flex-flow: column;
+		}
+	}
+	
+	&__hostel {
+		width: 35%;
+		height: 25vw;
+
+		object-fit: cover;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 100%;
+			height: 35vh;
+		}
+	}
+	
+	&__map-container {
+		width: 65%;
+		height: 25vw;
+		
+		position: relative;
+		overflow: hidden;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 100%;
+			height: 50vh;
+		}
+	}
+	
+	&__map-overlay {
+		width: 100%;
+		height: 25vw;
+		
+		position: absolute;
+		top: 0;
+		right: 0;
+		
+		@media (max-width: $breakpointMobile) {
+			height: 50vh;
+		}
+	}
+	
+	&__map {
+		width: 100%;
+		height: 25vw;
+		
+		display: block;
+		
+		position: absolute;
+		top: 0;
+		right: 0;
+		
+		border: none;
+		
+		@media (max-width: $breakpointMobile) {
+			height: 50vh;
+		}
+	}
+}

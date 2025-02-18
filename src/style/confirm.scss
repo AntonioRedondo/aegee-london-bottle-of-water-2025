@@ -1,0 +1,22 @@
+.confirm {
+	z-index: 7;
+	
+	&__paypal {
+		width: 100%;
+		max-width: 790px;
+		min-height: 320px;
+		margin-bottom: 1vw;
+		padding: 1vw;
+
+		background: $color3;
+		border-radius: 1vw;
+		
+		@media (max-width: $breakpointMobile) {
+			margin-top: 6vw;
+			margin-bottom: 6vw;
+			padding: 3vw;
+			min-height: 280px;
+			border-radius: 3vw;
+		}
+	}
+}

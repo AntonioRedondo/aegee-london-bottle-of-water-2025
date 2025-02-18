@@ -1,0 +1,72 @@
+.introduction {
+	z-index: 10;
+	
+	&__title {
+		margin-left: 1.5%;
+		color: $color3;
+		font-size: 2.6vw;
+		font-weight: 700;
+		
+		@media (max-width: $breakpointMobile) {
+			margin-left: 0;
+			font-size: 5vw;
+		}
+		
+		@media (min-width: $breakpointBig) {
+			font-size: 0.6em;
+		}
+	}
+	
+	&__title-new-line {
+		display: none;
+		
+		@media (max-width: $breakpointMobile) {
+			display: inline;
+		}
+	}
+	
+	&__fb-iframe {
+		width: 550px;
+		height: 580px;
+		margin: 4vw auto;
+		
+		display: block;
+		
+		border: none;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 100%;
+			height: 610px;
+			margin: 15vw auto 10vw;
+		}
+	}
+	
+	&__video {
+		width: 800px;
+		height: 450px;
+		margin: 5vw auto;
+		
+		display: block;
+		
+		border: none;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 100vw;
+			height: calc(100vw * 0.6);
+			margin: 12vw auto;
+		}
+	}
+	
+	&__img {
+		height: 17vw;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 100vw;
+			height: auto;
+		}
+		
+		@media (min-width: $breakpointBig) {
+			height: 340px;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.get-ready {
+	z-index: 6;
+	
+	&__img {
+		height: 18.6vw;
+		
+		transition: $time1 $ease-out;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 100vw;
+			height: auto;
+		}
+		
+		@media (min-width: $breakpointBig) {
+			height: 375px;
+		}
+		
+		&:hover {
+			position: relative;
+			z-index: 1;
+			box-shadow: 0 0 5vw $black060;
+			transform: scale(1.05);
+		}
+	}
+}

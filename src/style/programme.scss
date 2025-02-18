@@ -1,0 +1,14 @@
+.programme {
+	z-index: 9;
+
+	&__image {
+		width: 45vw;
+		margin: 4vw auto 2vw;
+		display: block;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 85vw;
+			margin: 12vw auto 2vw;
+		}
+	}
+}

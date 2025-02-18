@@ -1,0 +1,121 @@
+/* stylelint-disable selector-class-pattern */
+.organisers {
+	z-index: 5;
+	
+	&__organiser {
+		display: inline-block;
+		
+		color: white;
+		font-size: 1.2vw;
+		font-weight: normal;
+		
+		@media (max-width: $breakpointMobile) {
+			margin-bottom: 8vw;
+			font-size: 4vw;
+		}
+		
+		@media (min-width: $breakpointBig) {
+			font-size: 1.5em;
+		}
+		
+		&:hover {
+			text-shadow: none;
+		}
+		
+		&:hover .organisers__img {
+			transform: scale(1.1);
+			/* box-shadow: 0 0 10vw 0 color-mod($color6 a(50%)); */
+			box-shadow: 0 0 5vw 0 $color6;
+		}
+	}
+	
+	&__img {
+		width: 12vw;
+		height: @width;
+		margin: 1vw 1.4vw;
+		
+		border: 0.2vw solid $color3;
+		border-radius: 100%;
+		
+		transition: $time1;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 32vw;
+			height: @width;
+			margin: 2vw 4vw;
+			border: 0.7vw solid $color3;
+		}
+		
+		@media (min-width: $breakpointBig) {
+			width: 240px;
+			height: @width;
+			margin: 20px;
+			
+			border: 4px solid $color3;
+		}
+	}
+	
+	&__name {
+		font-family: "Source Sans Pro", sans-serif;
+		font-weight: 900;
+		color: palegoldenrod;
+		font-size: 2.5vw;
+		
+		@media (max-width: $breakpointMobile) {
+			font-size: 6vw;
+		}
+	}
+	
+	&__new-line {
+		display: inline;
+		
+		@media (max-width: $breakpointMobile) {
+			display: none;
+		}
+	}
+	
+	&__loves-you {
+		width: 35vw;
+		margin: 6vw auto 7vw;
+		display: block;
+		border: none;
+
+		transition: $time1 ease-out;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 80vw;
+			margin: 15vw auto 18vw;
+		}
+
+		&:hover {
+			transform: scale(1.03);
+			filter: drop-shadow(0 0 1.5vw $color6);
+		}
+	}
+	
+	&__help {
+		margin: 2.5vw 0 6vw;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		@media (max-width: $breakpointMobile) {
+			margin: 2.5vw 0 20vw;
+			flex-flow: column;
+		}
+	}
+	
+	&__help-logo {
+		margin: 0 4vw;
+
+		object-fit: contain;
+
+		transition: $time1 ease-out;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 50vw;
+			margin: 6vw 0 0;
+		}
+	}
+}

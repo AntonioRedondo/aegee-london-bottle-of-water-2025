@@ -1,0 +1,22 @@
+{
+	"extends": "stylelint-config-standard-scss",
+	"syntax": "scss",
+	"reporters": [{ "formatter": "string", "console": true }],
+	"failAfterError": false,
+	"//": "http://stylelint.io/user-guide/rules",
+	"//": "http://stackoverflow.com/questions/38462937/cannot-set-block-no-empty-to-false-in-stylelint",
+	"rules": {
+		"at-rule-empty-line-before":  ["always", {
+			"except": ["first-nested"]
+		}],
+		"at-rule-no-unknown":  [true, {
+			"ignoreAtRules": [ "at-root" ]
+		}],
+		"comment-empty-line-before": null,
+		"declaration-empty-line-before": null,
+		"no-descending-specificity": null,
+		"rule-empty-line-before": null,
+		"scss/dollar-variable-empty-line-before": null,
+		"scss/dollar-variable-pattern": null
+	}
+}
