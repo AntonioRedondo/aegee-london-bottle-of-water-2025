@@ -34,7 +34,7 @@
 		height: @width;
 		margin: 1vw 1.4vw;
 		
-		border: 0.2vw solid $color3;
+		border: 0.2vw solid $color4;
 		border-radius: 100%;
 		
 		transition: $time1;
@@ -43,7 +43,7 @@
 			width: 32vw;
 			height: @width;
 			margin: 2vw 4vw;
-			border: 0.7vw solid $color3;
+			border: 0.7vw solid $color4;
 		}
 		
 		@media (min-width: $breakpointBig) {
@@ -51,14 +51,14 @@
 			height: @width;
 			margin: 20px;
 			
-			border: 4px solid $color3;
+			border: 4px solid $color4;
 		}
 	}
 	
 	&__name {
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 900;
-		color: palegoldenrod;
+		color: $color3;
 		font-size: 2.5vw;
 		
 		@media (max-width: $breakpointMobile) {
