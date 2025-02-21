@@ -1,3 +1,6 @@
+.Bg\(n\) {
+  background: none;
+}
 .C\(\#f93\) {
   color: #f93;
 }
@@ -69,6 +72,9 @@
 .Pt\(1vw\) {
   padding-top: 1vw;
 }
+.Pt\(3vw\) {
+  padding-top: 3vw;
+}
 .Pt\(4vw\) {
   padding-top: 4vw;
 }
@@ -86,6 +92,9 @@
 }
 .Tt\(n\) {
   text-transform: none;
+}
+.W\(100\%\) {
+  width: 100%;
 }
 .W\(55\%\) {
   width: 55%;
@@ -130,9 +139,6 @@
   .Mt\(6vw\)--mo {
     margin-top: 6vw;
   }
-  .Mt\(8vw\)--mo {
-    margin-top: 8vw;
-  }
   .Mb\(2vw\)--mo {
     margin-bottom: 2vw;
   }
@@ -162,9 +168,6 @@
   }
   .Pt\(4vw\)--mo {
     padding-top: 4vw;
-  }
-  .Pt\(5vw\)--mo {
-    padding-top: 5vw;
   }
   .Pt\(6vw\)--mo {
     padding-top: 6vw;

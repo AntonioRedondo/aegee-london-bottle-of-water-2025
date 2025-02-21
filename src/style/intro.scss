@@ -24,15 +24,24 @@
 	
 	&__frame {
 		width: 100vw;
-		height: 100vh;
+		/* height: 100vh; */
 		
 		position: absolute;
-		top: 0;
+		bottom: 0;
 		left: 0;
 		
+		opacity: 0;
 		transform: scale(1.4, 1.4);
 
-		transition: transform 2s 2.6s ease-out;
+		transition:
+			transform 2s 2.6s ease-out,
+			opacity 2s 2.6s ease-in;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 350vw;
+			left: unset;
+			right: -70vw;
+		}
 	}
 	
 	&__mannequin {
@@ -53,20 +62,19 @@
 			opacity 2s 2s ease-in;
 		
 		@media (max-width: $breakpointMobile) {
-			height: 83vh;
-			left: -60%;
+			height: 93vh;
+			left: -50%;
 		}
 	}
 	
 	&__mannequin-right {
-		height: 112vh;
+		height: 94vh;
 		left: unset;
-		right: 5vw;
+		right: 0;
 		
 		@media (max-width: $breakpointMobile) {
-			height: 100vh;
-			right: -75%;
-			/* z-index: 1; */
+			height: 94vh;
+			right: -70%;
 		}
 	}
 	
@@ -86,7 +94,7 @@
 			opacity 2s 0.5s ease-in;
 		
 		@media (max-width: $breakpointMobile) {
-			top: 36vh;
+			top: 34vh;
 			z-index: 1;
 		}
 	}
@@ -99,7 +107,7 @@
 		filter: drop-shadow(0 0 20px black);
 		
 		@media (max-width: $breakpointMobile) {
-			width: 80vw;
+			width: 90vw;
 			filter: drop-shadow(0 0 20px black);
 		}
 	}

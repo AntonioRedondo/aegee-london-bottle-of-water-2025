@@ -23,9 +23,9 @@
 		}
 		
 		&:hover .organisers__img {
-			transform: scale(1.1);
-			/* box-shadow: 0 0 10vw 0 color-mod($color6 a(50%)); */
-			box-shadow: 0 0 5vw 0 $color6;
+			transform: scale(1.05);
+			/* box-shadow: 0 0 10vw 0 color-mod($color3 a(50%)); */
+			box-shadow: 0 0 6vw 0 $color3;
 		}
 	}
 	
@@ -89,7 +89,7 @@
 
 		&:hover {
 			transform: scale(1.03);
-			filter: drop-shadow(0 0 1.5vw $color6);
+			filter: drop-shadow(0 0 1.5vw $color3);
 		}
 	}
 	

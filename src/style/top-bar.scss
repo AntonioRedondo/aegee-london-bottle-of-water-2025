@@ -22,12 +22,11 @@
 	}
 	
 	&--in {
-		/* box-shadow: 0 0 15px color-mod(black a(35%)); */
 		box-shadow: 0 0 15px rgb(0 0 0 / 35%);
-		background: $color3;
+		background: url("img/bga.jpg");
 	
 		@media (max-width: $breakpointMobile) {
-			background: palegoldenrod;
+			background: $color3;
 		}
 		
 		& .top-bar__tab {
@@ -45,7 +44,7 @@
 	
 	&--open {
 		height: calc($topBarHeightMobile * 8 + 10px);
-		background: $color3;
+		background: $color4;
 		transition-timing-function: $ease-out;
 	}
 	
@@ -190,19 +189,18 @@
 		transition: box-shadow $time2;
 		
 		&:hover {
-			box-shadow: 0 0 1vw $color6;
+			box-shadow: 0 0 1vw $color3;
 		}
 	}
 	
 	&__logo {
-		width: 175px;
+		width: 215px;
 		height: 55px;
-		padding: 13px 12px 12px;
+		padding: 3px;
 		display: block;
 		box-sizing: border-box;
 		
 		opacity: 0;
-		background: url("img/bga.jpg");
 		object-fit: contain;
 
 		transition: $time2;
@@ -214,9 +212,9 @@
 			opacity: 1;
 		}
 		
-		&:hover {
+		/* &:hover {
 			width: 100vw;
-		}
+		} */
 	}
 	
 	&__left {
@@ -286,7 +284,7 @@
 		position: absolute;
 		top: calc($topBarHeight - @height);
 		
-		background: $color2;
+		background: $color4;
 		opacity: 0;
 		
 		transition: 0.4s $ease-out;
@@ -312,7 +310,7 @@
 			background:
 				radial-gradient(
 					ellipse farthest-corner at 50% 100%,
-					color-mod($color2 a(20%)) 0%,
+					color-mod($color4 a(20%)) 0%,
 					transparent 60%
 				) center 0 / 100% 100% no-repeat;
 		}

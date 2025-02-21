@@ -5,22 +5,23 @@
 	"description": "AEGEE-London official website",
 	"repository": "antonioredondo/AEGEE-London",
 	"license": "CC-BY-NC-ND-4.0",
+	"type": "module",
 	"main": "",
 	"scripts": {
 		"lint": "concurrently \"eslint --fix \"**/*.js\" --ignore-pattern \"docs\"\" \"htmlhint \"**/*.html\" --ignore=\"docs/**\"\" \"stylelint --fix \"**/*.scss\" --ip \"z_atoms.scss\"\"",
 		"start": "http-server docs -s",
 		"dev": "concurrently \"npm start\" \"gulp dev\"",
 		"build": "gulp",
-		"prepare": "husky install"
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"skrollr": "^0.6.26",
 		"skrollr-menu": "^1.0.3"
 	},
 	"devDependencies": {
-		"concurrently": "^8.2.2",
-		"eslint": "^8.57.0",
-		"gulp": "^4.0.2",
+		"concurrently": "^9.1.2",
+		"eslint": "^9.20.1",
+		"gulp": "^5.0.0",
 		"gulp-atomizer": "^3.0.7",
 		"gulp-concat": "^2.6.1",
 		"gulp-file-include": "^2.3.0",
@@ -32,12 +33,12 @@
 		"gulp-sourcemaps": "^3.0.0",
 		"htmlhint": "^1.1.4",
 		"http-server": "^14.1.1",
-		"husky": "^9.0.11",
-		"lint-staged": "^15.2.2",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.4.3",
 		"postcss-assets": "^6.0.0",
 		"precss": "^4.0.0",
-		"stylelint": "^16.2.1",
-		"stylelint-config-standard-scss": "^13.0.0"
+		"stylelint": "^16.14.1",
+		"stylelint-config-standard-scss": "^14.0.0"
 	},
 	"lint-staged": {
 		"*.js": "eslint --ignore-pattern \"docs\"",

@@ -173,7 +173,7 @@ function init() {
 d.notifyWhenLoaded(".intro__logo");
 d.notifyWhenLoaded(".intro__bg");
 d.notifyWhenLoaded(".intro__mannequin");
-// d.notifyWhenLoaded(".intro__frame");
+d.notifyWhenLoaded(".intro__frame");
 
 async function loadFonts() {
 	window.document.fonts.onloadingerror = (event) => {
